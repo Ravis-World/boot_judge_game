@@ -377,7 +377,7 @@ def main():
 
             if current_step > 0:
                 draw_rounded_panel(screen, btn_back_step, (45, 50, 68), (95, 102, 130), 2, 14)
-                b_txt = font_btn.render("← BACK", True, (220, 225, 238))
+                b_txt = font_btn.render("BACK", True, (220, 225, 238))
                 screen.blit(b_txt, (btn_back_step.centerx - b_txt.get_width() // 2, btn_back_step.centery - b_txt.get_height() // 2))
 
             is_final_step = (display_step_num == total_steps_num)

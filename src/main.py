@@ -269,11 +269,11 @@ def main():
         # Subtle Jukebox Status Bar at Top-Right
         if jukebox.status_note:
             jb_txt = font_sub.render(
-                f"♪ JUKEBOX ERROR: {jukebox.status_note}",
+                f"JUKEBOX ERROR: {jukebox.status_note}",
                 True, (245, 110, 110)
             )
         elif jukebox.tracks:
-            status_prefix = "MUTED" if jukebox.muted else "♪ JUKEBOX"
+            status_prefix = "MUTED" if jukebox.muted else "JUKEBOX"
             track_label = jukebox.current_track or "Loading..."
             jb_txt = font_sub.render(
                 f"{status_prefix}: {track_label}   [N: Skip | M: Mute]",
@@ -281,7 +281,7 @@ def main():
             )
         else:
             jb_txt = font_sub.render(
-                f"♪ JUKEBOX: No supported tracks in {jukebox.music_dir}",
+                f"JUKEBOX: No supported tracks in {jukebox.music_dir}",
                 True, (145, 152, 175)
             )
         screen.blit(jb_txt, (WIDTH - jb_txt.get_width() - 38, 10))
@@ -383,7 +383,7 @@ def main():
             is_final_step = (display_step_num == total_steps_num)
             confirm_bg = (212, 175, 55) if is_final_step else (66, 135, 245)
             confirm_fg = (18, 20, 28) if is_final_step else (255, 255, 255)
-            confirm_label = "JUDGE MY FIT! ★" if is_final_step else "NEXT QUESTION →"
+            confirm_label = "JUDGE MY FIT!" if is_final_step else "NEXT QUESTION"
 
             draw_rounded_panel(screen, btn_confirm, confirm_bg, None, 0, 14)
             c_txt = font_btn.render(confirm_label, True, confirm_fg)
@@ -444,7 +444,7 @@ def main():
                 screen.blit(r_surf, (625, 426 + i * 26))
 
             draw_rounded_panel(screen, btn_play_again, (212, 175, 55), None, 0, 16)
-            pa_txt = font_btn.render("BUILD ANOTHER FIT ↻", True, (18, 20, 28))
+            pa_txt = font_btn.render("BUILD ANOTHER FIT", True, (18, 20, 28))
             screen.blit(pa_txt, (btn_play_again.centerx - pa_txt.get_width() // 2, btn_play_again.centery - pa_txt.get_height() // 2))
 
         pygame.display.flip()

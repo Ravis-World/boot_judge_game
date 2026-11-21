@@ -1,0 +1,180 @@
+{
+    "meta": {
+        "min_score": 4,
+        "max_score": 40,
+        "description": "Style-weighted randomised combo scoring library. Each combo defines a score_range and dynamic {score} dialogue template."
+    },
+    "combos": [
+        {
+            "id": "weakest_npc_walk",
+            "name": "The Default NPC",
+            "criteria": {
+                "skin": "Ashen Grey",
+                "boot": "None (Barefoot)",
+                "sticky": "None (Clean)"
+            },
+            "score_range": [
+                4,
+                7
+            ],
+            "roast": "{score}/40—grey skin, completely barefoot, and zero goo? You walked onto the runway without clicking a single fun option."
+        },
+        {
+            "id": "weakest_dry_sneaker",
+            "name": "Suburban Lawn Dad",
+            "criteria": {
+                "skin": "Porcelain",
+                "boot": "Sneaker",
+                "color": "Stark White",
+                "sticky": "None (Clean)"
+            },
+            "score_range": [
+                4,
+                9
+            ],
+            "roast": "Only {score}/40 for clean white sneakers on porcelain skin. Not a single drop of chaos to be found anywhere."
+        },
+        {
+            "id": "barefoot_syrup_floor",
+            "name": "Midnight Kitchen Raid",
+            "criteria": {
+                "boot": "None (Barefoot)",
+                "sticky": "Maple Syrup"
+            },
+            "score_range": [
+                12,
+                18
+            ],
+            "roast": "{score}/40! Barefoot straight into a puddle of maple syrup—every step across the runway now makes a horrifying squelch."
+        },
+        {
+            "id": "sad_puddle_walk",
+            "name": "Monday Morning Commute",
+            "criteria": {
+                "boot": "Sneaker",
+                "color": "Matte Black",
+                "sticky": "Swamp Mud"
+            },
+            "score_range": [
+                9,
+                15
+            ],
+            "roast": "{score}/40. Black sneakers stepped straight into swamp mud—less avant-garde, more missing the bus in the rain."
+        },
+        {
+            "id": "mall_goth_gum",
+            "name": "Food Court Tragedy",
+            "criteria": {
+                "boot": "Combat",
+                "color": "Matte Black",
+                "sticky": "Bubblegum"
+            },
+            "score_range": [
+                14,
+                21
+            ],
+            "roast": "Scored {score}/40! Classic black combat boots ruined by chewed bubblegum under the sole—edgy above, comedy below."
+        },
+        {
+            "id": "pink_gum_twins",
+            "name": "Double Bubble Overload",
+            "criteria": {
+                "boot": "Sneaker",
+                "color": "Hot Pink",
+                "sticky": "Bubblegum"
+            },
+            "score_range": [
+                19,
+                26
+            ],
+            "roast": "{score}/40 for hot pink sneakers covered in matching pink bubblegum! We can barely tell where the shoe ends and the gum begins."
+        },
+        {
+            "id": "western_syrup_tie",
+            "name": "Pancake Rodeo",
+            "criteria": {
+                "boot": "Cowboy",
+                "color": "Tan Suede",
+                "sticky": "Maple Syrup"
+            },
+            "score_range": [
+                19,
+                26
+            ],
+            "roast": "A rootin'-tootin' {score}/40! Tan cowboy boots drenched in warm maple syrup—dangerously sticky frontier fashion."
+        },
+        {
+            "id": "cement_shoes_mob",
+            "name": "Permanent Sidewalk Statue",
+            "criteria": {
+                "boot": "Steel-Toe Work",
+                "color": "Matte Black",
+                "sticky": "Wet Cement"
+            },
+            "score_range": [
+                25,
+                32
+            ],
+            "roast": "{score}/40! Steel-toe boots encased in solidifying wet cement. Zero mobility, 100% commitment to the bit."
+        },
+        {
+            "id": "disco_marshmallow_tie",
+            "name": "Studio 54 S'more",
+            "criteria": {
+                "boot": "Go-Go Platform",
+                "color": "Metallic Silver",
+                "sticky": "Melted Marshmallow"
+            },
+            "score_range": [
+                26,
+                33
+            ],
+            "roast": "Groovy {score}/40! Metallic silver go-go platforms dripping with melted marshmallow—pure disco-era campfire chaos."
+        },
+        {
+            "id": "biohazard_breakfast",
+            "name": "Radioactive Lumberjack",
+            "criteria": {
+                "skin": "Alien Slime Green",
+                "boot": "Combat",
+                "color": "Neon Lime",
+                "sticky": "Maple Syrup"
+            },
+            "score_range": [
+                32,
+                38
+            ],
+            "roast": "Massive {score}/40! Alien green skin, neon lime combat boots, and maple syrup—summoning raccoons and OSHA at the same time."
+        },
+        {
+            "id": "yeti_forest_trap",
+            "name": "Ecological Catastrophe",
+            "criteria": {
+                "skin": "Pastel Blue",
+                "boot": "Fuzzy Yeti",
+                "color": "Electric Blue",
+                "sticky": "Tree Sap"
+            },
+            "score_range": [
+                36,
+                40
+            ],
+            "roast": "Legendary {score}/40! Amber tree sap matted into giant electric-blue Fuzzy Yeti boots—you are now legally part of the forest floor."
+        },
+        {
+            "id": "ectoplasm_platform_god",
+            "name": "Paranormal Runway Supreme",
+            "criteria": {
+                "skin": "Alien Slime Green",
+                "boot": "Go-Go Platform",
+                "color": "Hot Pink",
+                "sticky": "Radioactive Ectoplasm"
+            },
+            "score_range": [
+                37,
+                40
+            ],
+            "roast": "Unstoppable {score}/40! Hot pink go-go platforms slathered in glowing ectoplasm on alien skin—a masterpiece of bad decisions."
+        }
+    ]
+}
